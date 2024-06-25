@@ -1,7 +1,7 @@
 {
   "name": "bayrol-poolaccess-mqtt",
   "description": "Bayrol Poolaccess MQTT Bridge add-on",
-  "url" : "https://github.com/tdenolle/bayrol-poolaccess-mqtt.git",
+  "url": "https://github.com/tdenolle/bayrol-poolaccess-mqtt.git",
   "version": "1.0.0",
   "slug": "bayrol-poolaccess-mqtt",
   "udev": true,
@@ -15,53 +15,15 @@
   ],
   "panel_icon": "mdi:console",
   "panel_title": "Bayrol Poolaccess MQTT Bridge",
-  "options": {
-	"mqtt_in": null,
-	"mqtt_out": null
-  },
+  "options": {},
   "schema": {
-	"debug": "bool?",
-	"mqtt_in": {
-	  "host": "str",
-	  "ssl": "bool?",
-	  "port": "int?",
-	  "keepalive": "int?",
-	  "transport": "list(websockets|tcp)?",
-	  "client_id": "str?",
-	  "username": "str?",
-	  "password": "password?",
-	  "topics": [
-		"str?"
-	  ]
-	},
-	"topics": [
-	  {
-		"path": "str",
-		"mode": "list(subscribe|publish)",
-		"payload" : "str?"
-	  }
-	],
-	"mqtt_out": {
-	  "host": "str",
-	  "ssl": "bool?",
-	  "port": "int?",
-	  "keepalive": "int?",
-	  "transport": "list(websockets|tcp)?",
-	  "client_id": "str?",
-	  "username": "str?",
-	  "password": "password?"
-	},
-	"mappings": [
-	  {
-		"topic": "str",
-		"target": "str",
-		"payload": "str?",
-		"retain": "bool?",
-		"log": "bool?",
-		"regex": [
-		  "str?"
-		]
-	  }
-	]
+	"LOG_LEVEL": "list(DEBUG|INFO|ERROR)",
+    "DEVICE_TOKEN" : "str",
+    "DEVICE_SERIAL" : "str",
+	"HASS_DISCOVERY_PREFIX" : "str",
+	"MQTT_BASE_TOPIC": "str",
+	"MQTT_URL": "str",
+	"MQTT_USER": "str?",
+	"MQTT_PASSWORD": "password?"
   }
 }
