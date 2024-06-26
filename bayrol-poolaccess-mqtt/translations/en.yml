@@ -1,8 +1,4 @@
 configuration:
-  EMIT_INTERVAL:
-    name: Interval in seconds between 2 MQTT emissions
-    description: Interval in seconds between 2 MQTT emissions (0 = All frames are sent, 10 by default)
-
   HASS_DISCOVERY_PREFIX:
     name: Topic prefix for Home-Assistant Discovery
     description: Topic prefix for Home-Assistant Discovery (homeassistant by default)

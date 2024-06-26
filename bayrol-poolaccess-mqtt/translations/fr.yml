@@ -1,0 +1,24 @@
+configuration:
+  HASS_DISCOVERY_PREFIX:
+    name: Préfixe de sujet pour la découverte Home-Assistant
+    description: Préfixe de sujet pour la découverte Home-Assistant (par défaut, homeassistant)
+
+  LOG_LEVEL:
+    name: Niveau de journalisation (INFO, DEBUG, ERROR)
+    description: Niveau de journalisation (par défaut, INFO)
+
+  MQTT_BASE_TOPIC:
+    name: Topic de base MQTT
+    description: Topic de base MQTT (par défaut, homeassistant)
+
+  MQTT_URL:
+    name: URL de connexion au brocker MQTT
+    description: URL de connexion au brocker MQTT (par défaut, mqtt://homeassistant:1883)
+
+  MQTT_USER:
+    name: Utilisateur MQTT (facultatif)
+    description: Utilisateur MQTT (uniquement si l'authentification est activée sur le brocker MQTT)
+
+  MQTT_PASSWORD:
+    name: Mot de passe MQTT (facultatif)
+    description: Mot de passe MQTT (uniquement si l'authentification est activée sur le brocker MQTT)
