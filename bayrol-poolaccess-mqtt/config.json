@@ -1,11 +1,17 @@
 {
-  "name": "bayrol-poolaccess-mqtt",
-  "description": "Bayrol Poolaccess MQTT Bridge add-on",
+  "name": "Bayrol Poolaccess MQTT",
+  "description": "Use this add-on to retrieve your Bayrol Automatic Salt in Home Assistant",
   "url": "https://github.com/tdenolle/bayrol-poolaccess-mqtt.git",
   "version": "1.0.0",
   "slug": "bayrol-poolaccess-mqtt",
+  "services": [
+	"mqtt:need"
+  ],
   "udev": true,
   "uart": true,
+  "environment": {
+	"HASSIO_ADDON": "true"
+  },
   "arch": [
 	"aarch64",
 	"amd64",
@@ -18,9 +24,9 @@
   "options": {},
   "schema": {
 	"LOG_LEVEL": "list(DEBUG|INFO|ERROR)",
-    "DEVICE_TOKEN" : "str",
-    "DEVICE_SERIAL" : "str",
-	"HASS_DISCOVERY_PREFIX" : "str",
+	"DEVICE_TOKEN": "str",
+	"DEVICE_SERIAL": "str",
+	"HASS_DISCOVERY_PREFIX": "str",
 	"MQTT_BASE_TOPIC": "str",
 	"MQTT_URL": "str",
 	"MQTT_USER": "str?",
