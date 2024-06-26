@@ -3,7 +3,7 @@
   "description": "This Add-on allows you to connect to bayrol poolaccess server and publish data to your Home Assistant Mqtt broker.",
   "image" : "tdenolle/bayrol-poolaccess-mqtt",
   "url": "https://github.com/tdenolle/bayrol-poolaccess-mqtt.git",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "bayrol-poolaccess-mqtt",
   "services": [
 	"mqtt:need"
