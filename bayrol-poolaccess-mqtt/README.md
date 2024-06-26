@@ -1,6 +1,6 @@
-# bayrol-poolaccess-matt add-on
+# Bayrol Poolaccess MQTT Add-on
 
-![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/raw/master/docs/bayrol_automatic_salt_connect.png)
+![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/blob/bbe5ca9a4d96328df513f85959f5641914c0d760/docs/bayrol_automatic_salt_connect.png?raw=true)
 
 This add-on allows you to easily deploy and integrate [bayrol-poolaccess-mqtt](https://tdenolle.github.io/bayrol-poolaccess-mqtt/) to [Home-Assistant](https://www.home-assistant.io/).
 

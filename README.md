@@ -1,6 +1,6 @@
 # tdenolle hass.io add-ons repository
 
-![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/raw/master/docs/bayrol_automatic_salt_connect_logo.png)
+![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/blob/bbe5ca9a4d96328df513f85959f5641914c0d760/docs/bayrol_automatic_connect_logo.png?raw=true)
 
 ## Getting started
 
