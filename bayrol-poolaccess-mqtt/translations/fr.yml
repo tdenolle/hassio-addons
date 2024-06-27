@@ -3,6 +3,14 @@ configuration:
     name: Préfixe de sujet pour la découverte Home-Assistant
     description: Préfixe de sujet pour la découverte Home-Assistant (par défaut, homeassistant)
 
+  DEVICE_TOKEN:
+    name: Token d'authentification à Poolaccess
+    description: Token d'authentification à Poolaccess
+
+  DEVICE_SERIAL:
+    name: Numéro de série du produit connecté à Poolaccess
+    description: Numéro de série du produit connecté à Poolaccess
+
   LOG_LEVEL:
     name: Niveau de journalisation (INFO, DEBUG, ERROR)
     description: Niveau de journalisation (par défaut, INFO)

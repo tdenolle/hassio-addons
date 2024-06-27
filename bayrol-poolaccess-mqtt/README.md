@@ -16,6 +16,15 @@ This add-on allows you to easily deploy and integrate [bayrol-poolaccess-mqtt](h
 
 ### 5. Go to the add-on `Configuration` tab and configure the add-on
 
+ 1/ Get Device Token and Serial by connecting to https://www.bayrol-poolaccess.de
+![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/blob/bbe5ca9a4d96328df513f85959f5641914c0d760/docs/poolaccess_home.jpg?raw=true)
+
+ 2/ Clic on Applink button
+![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/blob/bbe5ca9a4d96328df513f85959f5641914c0d760/docs/poolaccess_applink.jpg?raw=true)
+
+ 3/ Open devtools and have a look at local storage tab
+![](https://github.com/tdenolle/bayrol-poolaccess-mqtt/blob/bbe5ca9a4d96328df513f85959f5641914c0d760/docs/poolaccess_devtools.jpg?raw=true)
+
 ### 6. Go to the add-on `Info` tab and click on the `Start` button
 
 ### 7. Go to the add-on `Log` tab and check that the add-on is working as expected

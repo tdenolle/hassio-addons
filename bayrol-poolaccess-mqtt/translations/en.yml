@@ -3,6 +3,14 @@ configuration:
     name: Topic prefix for Home-Assistant Discovery
     description: Topic prefix for Home-Assistant Discovery (homeassistant by default)
 
+  DEVICE_TOKEN:
+    name: Poolaccess device authentication token
+    description: Poolaccess device authentication token
+
+  DEVICE_SERIAL:
+    name: Poolaccess device serial
+    description: Poolaccess device serial
+
   LOG_LEVEL:
     name: Log level (INFO, DEBUG, ERROR)
     description: Log level (INFO, DEBUG, ERROR, INFO by default)
