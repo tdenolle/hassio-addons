@@ -1,7 +1,7 @@
 configuration:
   HASS_DISCOVERY_PREFIX:
     name: Préfixe de sujet pour la découverte Home-Assistant
-    description: Préfixe de sujet pour la découverte Home-Assistant (par défaut, homeassistant)
+    description: Préfixe de sujet pour la découverte Home-Assistant
 
   DEVICE_TOKEN:
     name: Token d'authentification à Poolaccess
@@ -13,15 +13,15 @@ configuration:
 
   LOG_LEVEL:
     name: Niveau de journalisation (INFO, DEBUG, ERROR)
-    description: Niveau de journalisation (par défaut, INFO)
+    description: Niveau de journalisation
 
   MQTT_BASE_TOPIC:
     name: Topic de base MQTT
-    description: Topic de base MQTT (par défaut, homeassistant)
+    description: Topic de base MQTT
 
   MQTT_URL:
     name: URL de connexion au brocker MQTT
-    description: URL de connexion au brocker MQTT (par défaut, mqtt://homeassistant:1883)
+    description: URL de connexion au brocker MQTT
 
   MQTT_USER:
     name: Utilisateur MQTT (facultatif)
