@@ -31,7 +31,8 @@
 	"DEVICE_SERIAL": "str",
 	"HASS_DISCOVERY_PREFIX": "str",
 	"MQTT_BASE_TOPIC": "str",
-	"MQTT_URL": "str",
+	"MQTT_HOST": "str",
+	"MQTT_PORT": "str",
 	"MQTT_USER": "str?",
 	"MQTT_PASSWORD": "password?"
   }

@@ -1,27 +1,31 @@
 configuration:
   HASS_DISCOVERY_PREFIX:
     name: Topic prefix for Home-Assistant Discovery
-    description: Topic prefix for Home-Assistant Discovery
+    description: Topic prefix for Home-Assistant Discovery (eg homeassistant)
 
   DEVICE_TOKEN:
     name: Poolaccess device authentication token
-    description: Poolaccess device authentication token
+    description: Poolaccess device authentication token (32 chars string
 
   DEVICE_SERIAL:
     name: Poolaccess device serial
-    description: Poolaccess device serial
+    description: Poolaccess device serial (eg. 22ASE2-00123)
 
   LOG_LEVEL:
-    name: Log level (INFO, DEBUG, ERROR)
+    name: Log level
     description: Log level (INFO, DEBUG, ERROR)
 
   MQTT_BASE_TOPIC:
     name: MQTT Base topic
     description: MQTT Base topic (eg homeassistant)
 
-  MQTT_URL:
-    name: MQTT Broker connection URL
-    description: MQTT Broker connection URL
+  MQTT_HOST:
+    name: MQTT host
+    description: MQTT Server host (eg. localhost)
+
+  MQTT_PORT:
+    name: MQTT port
+    description: MQTT Server port (eg. localhost)(eg. 1883)
 
   MQTT_USER:
     name: MQTT user (optional)
