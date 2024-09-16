@@ -34,3 +34,7 @@ configuration:
   MQTT_PASSWORD:
     name: Mot de passe MQTT (facultatif)
     description: Mot de passe MQTT (uniquement si l'authentification est activée sur le brocker MQTT)
+
+  LANGUAGE:
+    name: Langue
+    description: Langue des entités et messages (fr, en, de, es)

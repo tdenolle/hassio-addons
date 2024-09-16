@@ -34,3 +34,7 @@ configuration:
   MQTT_PASSWORD:
     name: MQTT password (optional)
     description: MQTT password (only if authentication is enabled on the mqtt broker)
+
+  LANGUAGE:
+    name: Language
+    description: Entities and Messages Language (fr, en, de, es)
