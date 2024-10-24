@@ -1,7 +1,7 @@
 ---
 
 ########## GENERAL SETTINGS ######################################################################################################
-name: teleinfo2mqtt
+name: teleinfo2mqtt [FORK]
 image: tdenolle/teleinfo2mqtt
 version: 9.0.4
 slug: teleinfo2mqtt
