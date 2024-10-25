@@ -3,7 +3,7 @@
 ########## GENERAL SETTINGS ######################################################################################################
 name: teleinfo2mqtt [FORK]
 image: tdenolle/teleinfo2mqtt
-version: 1.0.1
+version: 1.0.2
 slug: teleinfo2mqtt
 description: Serial to MQTT Teleinfo Bridge
 arch:
