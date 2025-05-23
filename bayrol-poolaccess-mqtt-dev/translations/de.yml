@@ -1,0 +1,40 @@
+configuration:
+  HASS_DISCOVERY_PREFIX:
+    name: Themenpräfix für Home-Assistant Discovery
+    description: Themenpräfix für Home-Assistant Discovery (z.B. homeassistant)
+
+  DEVICE_TOKEN:
+    name: Authentifizierungstoken für Poolaccess-Gerät
+    description: Authentifizierungstoken für Poolaccess-Gerät (32 Zeichen langer String)
+
+  DEVICE_SERIAL:
+    name: Seriennummer des Poolaccess-Geräts
+    description: Seriennummer des Poolaccess-Geräts (z.B. 22ASE2-00123)
+
+  LOG_LEVEL:
+    name: Protokollstufe
+    description: Protokollstufe (INFO, DEBUG, ERROR)
+
+  MQTT_BASE_TOPIC:
+    name: MQTT-Basisthema
+    description: MQTT-Basisthema (z.B. homeassistant)
+
+  MQTT_HOST:
+    name: MQTT-Host
+    description: Host des MQTT-Servers (z.B. localhost)
+
+  MQTT_PORT:
+    name: MQTT-Port
+    description: Port des MQTT-Servers (z.B. 1883)
+
+  MQTT_USER:
+    name: MQTT-Benutzer (optional)
+    description: MQTT-Benutzer (nur wenn die Authentifizierung auf dem MQTT-Broker aktiviert ist)
+
+  MQTT_PASSWORD:
+    name: MQTT-Passwort (optional)
+    description: MQTT-Passwort (nur wenn die Authentifizierung auf dem MQTT-Broker aktiviert ist)
+
+  LANGUAGE:
+    name: Sprache
+    description: Sprache für Entitäten und Meldungen (fr, en, de, es)

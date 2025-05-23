@@ -1,0 +1,47 @@
+{
+  "name": "Bayrol Poolaccess MQTT - Dev Channel",
+  "description": "Easily connect Bayrol Poolaccess to Home-Assistant.",
+  "image" : "tdenolle/bayrol-poolaccess-mqtt",
+  "url": "https://github.com/tdenolle/bayrol-poolaccess-mqtt.git",
+  "version": "1.4.0-dev.20250523211047",
+  "author": "tdenolle",
+  "license": "MIT",
+  "slug": "bayrol-poolaccess-mqtt",
+  "services": [
+	"mqtt:need"
+  ],
+  "udev": true,
+  "uart": true,
+  "environment": {
+	"HASSIO_ADDON": "true"
+  },
+  "arch": [
+	"aarch64",
+	"amd64",
+	"armhf",
+	"armv7",
+	"i386"
+  ],
+  "panel_icon": "mdi:console",
+  "panel_title": "Bayrol Poolaccess MQTT Bridge",
+  "options": {
+	  "LOG_LEVEL" : "INFO",
+	  "HASS_DISCOVERY_PREFIX": "homeassistant",
+	  "MQTT_BASE_TOPIC": "homeassistant",
+	  "MQTT_HOST": "localhost",
+	  "MQTT_PORT" : 1883,
+	  "LANGUAGE" : "fr"
+  },
+  "schema": {
+	"LOG_LEVEL": "list(DEBUG|INFO|ERROR)",
+	"DEVICE_TOKEN": "str",
+	"DEVICE_SERIAL": "str",
+	"HASS_DISCOVERY_PREFIX": "str",
+	"MQTT_BASE_TOPIC": "str",
+	"MQTT_HOST": "str",
+	"MQTT_PORT": "int",
+	"MQTT_USER": "str?",
+	"MQTT_PASSWORD": "password?",
+	"LANGUAGE": "list(fr|en|de|es)"
+  }
+}
