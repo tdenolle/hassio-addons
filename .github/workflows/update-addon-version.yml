@@ -34,3 +34,7 @@ jobs:
           echo SLUG ${{ github.event.inputs.slug }}
           echo VERSION ${{ github.event.inputs.version }}
           echo CONFIG_PATH $CONFIG_PATH
+          
+          echo "Current version :$(jq '.version' $CONFIG_PATH)
+          echo "$(jq '.version = "'${{ github.event.inputs.version }}'"' $CONFIG_PATH)" > $CONFIG_PATH
+          echo "Updated version : $(jq '.version' $CONFIG_PATH)"
