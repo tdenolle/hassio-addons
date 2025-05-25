@@ -18,6 +18,11 @@ jobs:
   update_version:
     runs-on: ubuntu-latest
 
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out repository under $GITHUB_WORKSPACE, so your job can access it
@@ -38,3 +43,6 @@ jobs:
           echo Current version $(jq '.version' $CONFIG_PATH)
           echo "$(jq '.version = "'${{ github.event.inputs.version }}'"' $CONFIG_PATH)" > $CONFIG_PATH
           echo Updated version  $(jq '.version' $CONFIG_PATH)
+
+       # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v5
