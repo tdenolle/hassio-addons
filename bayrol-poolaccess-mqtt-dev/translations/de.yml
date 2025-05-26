@@ -38,3 +38,7 @@ configuration:
   LANGUAGE:
     name: Sprache
     description: Sprache für Entitäten und Meldungen (fr, en, de, es)
+
+  SMART_AND_EASY_CONTROL_MODULE:
+    name: Smart & Easy Control Modul
+    description: Aktivieren Sie das Smart & Easy Control Modul (true/false)

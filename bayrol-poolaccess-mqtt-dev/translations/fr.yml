@@ -38,3 +38,7 @@ configuration:
   LANGUAGE:
     name: Langue
     description: Langue des entités et messages (fr, en, de, es)
+
+  SMART_AND_EASY_CONTROL_MODULE:
+    name: Module de contrôle Smart & Easy
+    description: Activer le module de contrôle Smart & Easy (true/false)

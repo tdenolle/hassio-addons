@@ -38,3 +38,7 @@ configuration:
   LANGUAGE:
     name: Idioma
     description: Idioma de entidades y mensajes (fr, en, de, es)
+
+  SMART_AND_EASY_CONTROL_MODULE:
+    name: Módulo de control Smart & Easy
+    description: Habilitar el módulo de control Smart & Easy (true/false)
