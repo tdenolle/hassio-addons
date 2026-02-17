@@ -1,31 +1,33 @@
-
-
 name: Update addon latest version
 
 on:
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
-        slug:
-          description: 'Addon slug (e.g., bayrol-poolaccess-mqtt-dev)'
-          required: true
-        version:
-          description: 'Addon target version (e.g., 1.0.0-dev)'
-          required: true
+      slug:
+        description: 'Addon slug (e.g., bayrol-poolaccess-mqtt,bayrol-poolaccess-mqtt-dev)'
+        required: true
+      version:
+        description: 'Addon target version (e.g., 1.2.3, 1.0.0-dev)'
+        required: true
+      mode:
+        description: 'Update mode: auto (direct commit) or pr (create a pull request)'
+        required: false
+        default: 'auto'
+        type: choice
+        options:
+          - auto
+          - pr
 
 jobs:
-  
+
   update_version:
     runs-on: ubuntu-latest
 
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
       contents: write
+      pull-requests: write
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
       - name: Install dependencies
@@ -38,11 +40,28 @@ jobs:
         run: |
           echo SLUG ${{ github.event.inputs.slug }}
           echo VERSION ${{ github.event.inputs.version }}
+          echo MODE ${{ github.event.inputs.mode }}
           echo CONFIG_PATH $CONFIG_PATH
-          
+
           echo Current version $(jq '.version' $CONFIG_PATH)
-          echo "$(jq '.version = "'${{ github.event.inputs.version }}'"' $CONFIG_PATH)" > $CONFIG_PATH
+          echo "$(jq '.version = "${{ github.event.inputs.version }}"' $CONFIG_PATH)" > $CONFIG_PATH
           echo Updated version  $(jq '.version' $CONFIG_PATH)
 
-       # Commit all changed files back to the repository
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      # ── Direct commit (dev / auto mode) ─────────────────────────────
+      - name: Auto-commit changes
+        if: github.event.inputs.mode != 'pr'
+        uses: stefanzweifel/git-auto-commit-action@v5
+
+      # ── Pull request (release / pr mode) ────────────────────────────
+      - name: Create pull request
+        if: github.event.inputs.mode == 'pr'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: update/${{ github.event.inputs.slug }}/${{ github.event.inputs.version }}
+          commit-message: "chore(${{ github.event.inputs.slug }}): bump version to ${{ github.event.inputs.version }}"
+          title: "chore(${{ github.event.inputs.slug }}): bump version to ${{ github.event.inputs.version }}"
+          body: |
+            Automated version update for **${{ github.event.inputs.slug }}** to `${{ github.event.inputs.version }}`.
+
+            Merge this PR to deploy the release.
+          labels: release
