@@ -38,3 +38,7 @@ configuration:
   LANGUAGE:
     name: Idioma
     description: Idioma de entidades y mensajes (fr, en, de, es)
+
+  ANONYMOUS_ERROR_SHARING:
+    name: Compartir errores de forma anónima
+    description: Habilitar el envío anónimo de registros de errores al desarrollador para mejorar el complemento

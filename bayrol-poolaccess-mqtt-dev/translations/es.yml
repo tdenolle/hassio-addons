@@ -42,3 +42,7 @@ configuration:
   SMART_AND_EASY_CONTROL_MODULE:
     name: Módulo de control Smart & Easy
     description: Habilitar el módulo de control Smart & Easy (true/false)
+
+  ANONYMOUS_ERROR_SHARING:
+    name: Compartir errores de forma anónima
+    description: Habilitar el envío anónimo de registros de errores al desarrollador para mejorar el complemento

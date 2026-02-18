@@ -42,3 +42,7 @@ configuration:
   SMART_AND_EASY_CONTROL_MODULE:
     name: Module de contrôle Smart & Easy
     description: Activer le module de contrôle Smart & Easy (true/false)
+
+  ANONYMOUS_ERROR_SHARING:
+    name: Partage anonyme des erreurs
+    description: Activer le partage anonyme des logs d'erreur avec le développeur pour améliorer l'addon

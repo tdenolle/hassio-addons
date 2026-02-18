@@ -38,3 +38,7 @@ configuration:
   LANGUAGE:
     name: Sprache
     description: Sprache für Entitäten und Meldungen (fr, en, de, es)
+
+  ANONYMOUS_ERROR_SHARING:
+    name: Anonyme Fehlerfreigabe
+    description: Anonyme Freigabe von Fehlerprotokollen an den Entwickler aktivieren, um das Add-on zu verbessern

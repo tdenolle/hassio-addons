@@ -38,3 +38,7 @@ configuration:
   LANGUAGE:
     name: Language
     description: Entities and Messages Language (fr, en, de, es)
+
+  ANONYMOUS_ERROR_SHARING:
+    name: Anonymous error sharing
+    description: Enable anonymous error log sharing with the developer to help improve the addon
