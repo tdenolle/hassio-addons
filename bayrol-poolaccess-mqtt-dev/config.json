@@ -3,7 +3,7 @@
   "description": "Easily connect Bayrol Poolaccess to Home-Assistant.",
   "image": "tdenolle/bayrol-poolaccess-mqtt",
   "url": "https://github.com/tdenolle/bayrol-poolaccess-mqtt.git",
-  "version": "1.4.5-dev.20260225104454",
+  "version": "1.4.5-dev.20260225105044",
   "author": "tdenolle",
   "license": "MIT",
   "slug": "bayrol-poolaccess-mqtt-dev",
