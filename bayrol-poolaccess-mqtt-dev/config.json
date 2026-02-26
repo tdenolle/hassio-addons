@@ -47,6 +47,6 @@
     "MQTT_PASSWORD": "password?",
     "LANGUAGE": "list(fr|en|de|es)",
     "SMART_AND_EASY_CONTROL_MODULE": "bool?",
-    "ANONYMOUS_ERROR_SHARING": "bool?"
+    "ANONYMOUS_ERROR_SHARING": "bool"
   }
 }
