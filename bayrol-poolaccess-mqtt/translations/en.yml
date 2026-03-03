@@ -13,7 +13,7 @@ configuration:
 
   LOG_LEVEL:
     name: Log level
-    description: Log level (INFO, DEBUG, ERROR)
+    description: Log level (INFO, DEBUG, WARNING, ERROR)
 
   MQTT_BASE_TOPIC:
     name: MQTT Base topic

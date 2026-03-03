@@ -13,7 +13,7 @@ configuration:
 
   LOG_LEVEL:
     name: Protokollstufe
-    description: Protokollstufe (INFO, DEBUG, ERROR)
+    description: Protokollstufe (INFO, DEBUG, WARNING, ERROR)
 
   MQTT_BASE_TOPIC:
     name: MQTT-Basisthema

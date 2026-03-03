@@ -13,7 +13,7 @@ configuration:
 
   LOG_LEVEL:
     name: Nivel de registro
-    description: Nivel de registro (INFO, DEBUG, ERROR)
+    description: Nivel de registro (INFO, DEBUG, WARNING, ERROR)
 
   MQTT_BASE_TOPIC:
     name: Tema base de MQTT

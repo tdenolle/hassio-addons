@@ -13,7 +13,7 @@ configuration:
 
   LOG_LEVEL:
     name: Niveau de journalisation
-    description: Niveau de journalisation (INFO, DEBUG, ERROR)
+    description: Niveau de journalisation (INFO, DEBUG, WARNING, ERROR)
 
   MQTT_BASE_TOPIC:
     name: Topic de base MQTT
