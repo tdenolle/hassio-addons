@@ -7,7 +7,7 @@ on:
         description: 'Addon slug (e.g., bayrol-poolaccess-mqtt,bayrol-poolaccess-mqtt-dev)'
         required: true
       version:
-        description: 'Addon target version (e.g., 1.2.3, 1.0.0-dev)'
+        description: 'Addon target version (e.g., 2026.3.1, 2026.3.1-dev)'
         required: true
       mode:
         description: 'Update mode: auto (direct commit) or pr (create a pull request)'
