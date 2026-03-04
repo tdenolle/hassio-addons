@@ -39,6 +39,10 @@ configuration:
     name: Sprache
     description: Sprache für Entitäten und Meldungen (fr, en, de, es)
 
+  SMART_AND_EASY_CONTROL_MODULE:
+    name: Smart & Easy Control Modul
+    description: Aktivieren Sie das Smart & Easy Control Modul (true/false)
+
   ANONYMOUS_ERROR_SHARING:
     name: Anonyme Fehlerfreigabe
     description: Anonyme Freigabe von Fehlerprotokollen an den Entwickler aktivieren, um das Add-on zu verbessern
